@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileProgramming_A3.MainPage">
+
+    <StackLayout>
+        <Grid Margin="0, 20">
+            <Label Text="Phone Book" TextColor="DarkGreen" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+        </Grid>
+
+        <Grid Margin="10, 20">
+            <BoxView Grid.Row="0" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="0" Grid.Column="1"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="1"></BoxView>
+            <BoxView Grid.Row="2" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="2" Grid.Column="1"></BoxView>
+            <BoxView Grid.Row="3" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="3" Grid.Column="1"></BoxView>
+            
+
+            <Label Margin="0,10" Grid.Row="0" Grid.Column="0" Text="Name - Surname: " TextColor="DarkBlue" FontSize="15"></Label>
+            <Entry x:Name="NameEntry" Grid.Row="0" Grid.Column="1" TextColor="DarkGreen" FontSize="15"></Entry>
+
+            <Label Margin="0,10" Grid.Row="1" Grid.Column="0" Text="Phone Number: " TextColor="DarkBlue" FontSize="15"></Label>
+            <Entry x:Name="PhoneEntry" Grid.Row="1" Grid.Column="1" TextColor="DarkGreen" FontSize="15"></Entry>
+
+            <Label Margin="0,10" Grid.Row="2" Grid.Column="0" Text="E-mail: " TextColor="DarkBlue" FontSize="15"></Label>
+            <Entry x:Name="MailEntry" Grid.Row="2" Grid.Column="1" TextColor="DarkGreen" FontSize="15"></Entry>
+
+            <Label  Margin="0,10" Grid.Row="3" Grid.Column="0" Text="Select Picture: " TextColor="DarkBlue" FontSize="15"></Label>
+            <Button Clicked="Handle_Clicked" x:Name="btnPic" FontAttributes="Bold" Text="Select picture" Grid.Row="3" Grid.Column="1" BackgroundColor="Green" TextColor="white" FontSize="15"></Button>
+
+            <Image x:Name="selectedImage"/>
+        </Grid>
+        
+        <Grid Margin="10,50">
+            <BoxView Grid.Row="0" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="0" Grid.Column="1"></BoxView>
+            <BoxView Grid.Row="0" Grid.Column="2"></BoxView>
+            <BoxView Grid.Row="0" Grid.Column="3"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="1"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="2"></BoxView>
+            <BoxView Grid.Row="1" Grid.Column="3"></BoxView>
+
+            <Button Clicked="Button_Clicked_Save" x:Name="btnSave" Margin="10" FontAttributes="Bold" BackgroundColor="Green" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Save" TextColor="white" FontSize="15"></Button>
+            <Button Clicked="Button_Clicked" x:Name="btnPBook" Margin="10" FontAttributes="Bold" BackgroundColor="Green" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Phone List" TextColor="white" FontSize="15"></Button>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
